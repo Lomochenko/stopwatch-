@@ -1,0 +1,99 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box !important;
+    font-family: 'lato', sans-serif;
+}
+
+body {
+    background: url(confused-young-pretty-woman-holds-clock-looking-side-isolated-orange-wall.jpg) no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* container */
+.container {
+    width: max-content;
+    height: 250px;
+    background-color: #fff;
+    border-radius: 1.7rem;
+    box-shadow: 0 0 5px;
+    /* glassMorphism */
+    backdrop-filter: blur(17px) saturate(180%);
+    -webkit-backdrop-filter: blur(17px) saturate(180%);
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    transition: all ease .5s;
+}
+
+.container:hover {
+    box-shadow: 3px 3px 3px rgba(255, 255, 255, 0.125);
+}
+
+/* timer */
+#timer {
+    width: 100%;
+    font-size: 4rem;
+    text-align: center;
+    padding: 2rem;
+}
+
+/* buttons */
+#buttons {
+    text-align: center;
+    margin-top: 2.7rem;
+}
+
+/* both btn style */
+i {
+    margin: auto .7rem;
+    font-size: 2rem;
+    padding: .3rem;
+    color: #fff;
+}
+
+i::before {
+    margin: auto 0 !important;
+}
+
+/* play & stop btn */
+#play {
+    background-color: green;
+    border-radius: .2rem;
+    transition: all ease .5s;
+}
+
+#pause {
+    background-color: orange;
+    border-radius: .2rem;
+    transition: all ease .5s;
+}
+
+/* reset */
+#reset {
+    background-color: #ff0000;
+    border-radius: .2rem;
+    transition: all ease .5s;
+}
+
+#play,
+#pause,
+#reset {
+    cursor: pointer;
+}
+
+/* hover */
+#play:hover {
+    font-size: 2.2rem;
+}
+
+#pause:hover {
+    font-size: 2.2rem;
+}
+
+#reset:hover {
+    font-size: 2.2rem;
+}
